@@ -33,7 +33,7 @@
                 <div class="my-3 w-100">
                     <div class="row gap-x-4">
                         <label class="col-md-8">How many people to share the bill? </label>
-                        <input class="col-md-4" type="number" id = 'number2'><br>
+                        <input class="col-md-4" type="number" id = 'number'><br>
                     </div>
                 </div>
                 <div class="container my-4" >
@@ -50,7 +50,7 @@
 <script>
     function share_bill() {
          let price = $("#price").val()
-         let numbers = $("#number2").val()
+         let numbers = $("#number").val()
          let tip = $("#price input[type='radio']:checked").val() 
          let total_per_person
      

@@ -1,0 +1,121 @@
+
+body     {
+    width: 100%;
+    background-image: linear-gradient(to right, #21d77c 0%, #21d77c 100%);
+}
+.todo-app h2{
+    color:   #323e4e;
+}
+.todo-app{
+    max-width: 540px;
+    background: #fff;
+    aspect-ratio:16 /9;
+    margin: auto ;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.enter-task {
+   background-color:   #323e4e;
+   padding: 0.5rem;
+   border: none;
+   color: white;
+   border-radius: 50px;
+   text-indent: 1rem;
+   width: 100%;
+   margin-right: 10px;
+}
+#enter-box{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.add {
+    background-color: #21d77c;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border: none;
+    border-radius: 50%;
+}
+
+
+
+input:focus {
+    outline: none;
+  }
+.task{
+    background-color: white;
+}
+
+.save {
+    float: left;
+    border-radius: 5px;
+    border: none;
+    background: #43e97b ;
+    color: white;
+    width: 100px ;
+    padding: 10px;
+}
+.save:hover{
+    background: #21d77c;
+}
+
+ul li{
+    list-style: none ;
+    font-size: 17px;
+    padding: 12px;
+    position: relative;
+    text-indent: 40px;
+    border-bottom:1px solid #20b396;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50px;
+    background-image: url(./image/unchecked-icon.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked {
+    color: #999;
+    text-decoration: line-through;
+    text-decoration-color: #999;
+
+}
+
+ul li.checked::before {
+    background-image: url(./image/checked-icon.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%; 
+}
+span .fa-trash-can{
+    cursor: pointer;
+    position: absolute;
+    transform: translate(-18%, -43%);
+    right: 0;
+    bottom: 0;
+}
+
+
+ul li span:hover{
+   background: #edeef0;
+
+}
+
